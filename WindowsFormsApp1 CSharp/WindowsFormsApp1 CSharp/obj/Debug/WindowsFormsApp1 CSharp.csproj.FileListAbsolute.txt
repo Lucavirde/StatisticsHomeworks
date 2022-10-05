@@ -1,0 +1,11 @@
+C:\Users\luca1\source\repos\WindowsFormsApp1 CSharp\WindowsFormsApp1 CSharp\bin\Debug\WindowsFormsApp1 CSharp.exe.config
+C:\Users\luca1\source\repos\WindowsFormsApp1 CSharp\WindowsFormsApp1 CSharp\bin\Debug\WindowsFormsApp1 CSharp.exe
+C:\Users\luca1\source\repos\WindowsFormsApp1 CSharp\WindowsFormsApp1 CSharp\bin\Debug\WindowsFormsApp1 CSharp.pdb
+C:\Users\luca1\source\repos\WindowsFormsApp1 CSharp\WindowsFormsApp1 CSharp\obj\Debug\WindowsFormsApp1 CSharp.csproj.AssemblyReference.cache
+C:\Users\luca1\source\repos\WindowsFormsApp1 CSharp\WindowsFormsApp1 CSharp\obj\Debug\WindowsFormsApp1 CSharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\luca1\source\repos\WindowsFormsApp1 CSharp\WindowsFormsApp1 CSharp\obj\Debug\WindowsFormsApp1_CSharp.Form1.resources
+C:\Users\luca1\source\repos\WindowsFormsApp1 CSharp\WindowsFormsApp1 CSharp\obj\Debug\WindowsFormsApp1_CSharp.Properties.Resources.resources
+C:\Users\luca1\source\repos\WindowsFormsApp1 CSharp\WindowsFormsApp1 CSharp\obj\Debug\WindowsFormsApp1 CSharp.csproj.GenerateResource.cache
+C:\Users\luca1\source\repos\WindowsFormsApp1 CSharp\WindowsFormsApp1 CSharp\obj\Debug\WindowsFormsApp1 CSharp.csproj.CoreCompileInputs.cache
+C:\Users\luca1\source\repos\WindowsFormsApp1 CSharp\WindowsFormsApp1 CSharp\obj\Debug\WindowsFormsApp1 CSharp.exe
+C:\Users\luca1\source\repos\WindowsFormsApp1 CSharp\WindowsFormsApp1 CSharp\obj\Debug\WindowsFormsApp1 CSharp.pdb
