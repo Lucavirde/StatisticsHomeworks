@@ -13,7 +13,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        Using parser As TextFieldParser = New TextFieldParser("C:\Users\luca1\source\repos\student_statistics.csv.csv")
+        Using parser As TextFieldParser = New TextFieldParser("C:\Users\luca1\Desktop\wiresharkdtasetTCP.csv")
             parser.TextFieldType = FieldType.Delimited
             parser.SetDelimiters(",")
 

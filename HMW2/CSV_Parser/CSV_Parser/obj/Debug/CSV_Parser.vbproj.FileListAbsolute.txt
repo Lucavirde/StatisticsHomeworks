@@ -11,3 +11,16 @@ C:\Users\luca1\source\repos\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.vbproj.Co
 C:\Users\luca1\source\repos\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.exe
 C:\Users\luca1\source\repos\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.xml
 C:\Users\luca1\source\repos\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.pdb
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\bin\Debug\CSV_Parser.exe.config
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\bin\Debug\CSV_Parser.exe
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\bin\Debug\CSV_Parser.pdb
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\bin\Debug\CSV_Parser.xml
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.vbproj.AssemblyReference.cache
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.vbproj.SuggestedBindingRedirects.cache
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.Form1.resources
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.Resources.resources
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.vbproj.GenerateResource.cache
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.vbproj.CoreCompileInputs.cache
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.exe
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.xml
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\CSV_Parser\CSV_Parser\obj\Debug\CSV_Parser.pdb

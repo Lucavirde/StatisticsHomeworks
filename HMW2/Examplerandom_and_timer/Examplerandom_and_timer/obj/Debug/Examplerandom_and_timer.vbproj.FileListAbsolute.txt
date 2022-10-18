@@ -11,3 +11,16 @@ C:\Users\luca1\source\repos\Examplerandom_and_timer\Examplerandom_and_timer\obj\
 C:\Users\luca1\source\repos\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.exe
 C:\Users\luca1\source\repos\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.xml
 C:\Users\luca1\source\repos\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.pdb
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\bin\Debug\Examplerandom_and_timer.exe.config
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\bin\Debug\Examplerandom_and_timer.exe
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\bin\Debug\Examplerandom_and_timer.pdb
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\bin\Debug\Examplerandom_and_timer.xml
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.vbproj.AssemblyReference.cache
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.vbproj.SuggestedBindingRedirects.cache
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.Form1.resources
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.Resources.resources
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.vbproj.GenerateResource.cache
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.vbproj.CoreCompileInputs.cache
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.exe
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.xml
+C:\Users\luca1\Documents\GitHub\StatisticsHomeworks\HMW2\Examplerandom_and_timer\Examplerandom_and_timer\obj\Debug\Examplerandom_and_timer.pdb
