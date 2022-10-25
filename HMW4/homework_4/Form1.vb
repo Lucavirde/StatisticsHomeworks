@@ -24,13 +24,16 @@
         Dim maxY As Double = TrialsCount
         Dim absolutefreq As Integer = 0
 
-        Dim VirtualWindow As New Rectangle(20, 20, Me.b.Width - 40, Me.b.Height - 40)
+        Dim VirtualWindow As New Rectangle(40, 40, Me.b.Width - 40, Me.b.Height - 40)
 
         g.DrawRectangle(Pens.DarkSlateGray, VirtualWindow)
 
         For i As Integer = 1 To NumerOfTrajectories
 
             Dim Punti As New List(Of Point)
+            Dim Punti2 As New List(Of Point)
+            Dim Punti3 As New List(Of Point)
+
             Dim success As Double = 0
             Dim unsucces As Integer = 0
             Dim tentatives As Integer = 0
@@ -45,17 +48,22 @@
                     tentatives += 1
                 End If
                 Dim xDevice As Integer = FromXRealToXVirtual(X, minX, maxX, VirtualWindow.Left, VirtualWindow.Width)
+
                 Dim YDevice As Integer = FromYRealToYVirtual(success, minY, maxY, VirtualWindow.Top, VirtualWindow.Height)
                 Punti.Add(New Point(xDevice, YDevice))
+
+
+                Dim average As Integer = success * TrialsCount / (X + 1)
+                Dim YDevice2 As Integer = FromYRealToYVirtual(average, minY, maxY, VirtualWindow.Top, VirtualWindow.Height)
+                Punti2.Add(New Point(xDevice, YDevice2))
+
+                Dim normalized As Double = success * (Math.Sqrt(TrialsCount)) / Math.Sqrt(X + 1)
+                Dim YDevice3 As Integer = FromYRealToYVirtual(normalized, minY, maxY * SuccessProbability, VirtualWindow.Top, VirtualWindow.Height)
+                Punti3.Add(New Point(xDevice, YDevice3))
             Next
             g.DrawLines(PenTrajectory, Punti.ToArray)
-            Dim p As Integer = FromXRealToXVirtual(TrialsCount, minX, maxX, VirtualWindow.Left, VirtualWindow.Width)
-            Dim average As Integer = CInt(absolutefreq) / i
-            Dim normalized As Double = success / Math.Sqrt(TrialsCount)
-            Dim y As Integer = FromYRealToYVirtual(average, minY, maxY, VirtualWindow.Top, VirtualWindow.Height)
-            g.DrawLine(Penaverage, New Point(20, 20), New Point(p, y))
-            y = FromYRealToYVirtual(normalized, minY, maxY, VirtualWindow.Top, VirtualWindow.Height)
-            g.DrawLine(Penormalized, New Point(20, 20), New Point(p, y))
+            g.DrawLines(Penaverage, Punti2.ToArray)
+            g.DrawLines(Penormalized, Punti3.ToArray)
         Next
 
         Me.PictureBox1.Image = b
