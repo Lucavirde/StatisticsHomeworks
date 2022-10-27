@@ -1,18 +1,27 @@
-﻿Public Class Form1
+﻿Imports System.Drawing.Drawing2D
 
-    Public b As Bitmap
-    Public g As Graphics
+Public Class Form1
+
+    Public b, b2 As Bitmap
+    Public g, g2 As Graphics
     Public r As New Random
     Public PenTrajectory As New Pen(Color.DarkGreen, 2)
     Public Penaverage As New Pen(Color.Red, 2)
     Public Penormalized As New Pen(Color.Purple, 2)
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         Me.b = New Bitmap(Me.PictureBox1.Width, Me.PictureBox1.Height)
         Me.g = Graphics.FromImage(b)
         Me.g.SmoothingMode = Drawing2D.SmoothingMode.HighQuality
+
+        Me.b2 = New Bitmap(Me.PictureBox2.Width, Me.PictureBox2.Height)
+        Me.g2 = Graphics.FromImage(b2)
+        Me.g2.SmoothingMode = Drawing2D.SmoothingMode.HighQuality
+
         Me.g.Clear(Color.White)
+        Me.g2.Clear(Color.White)
 
         Dim TrialsCount As Integer = 100
         Dim NumerOfTrajectories As Integer = 30
@@ -24,11 +33,16 @@
         Dim maxY As Double = TrialsCount
         Dim absolutefreq As Integer = 0
 
-        Dim VirtualWindow As New Rectangle(40, 40, Me.b.Width - 40, Me.b.Height - 40)
+        Dim VirtualWindow As New Rectangle(0, 0, Me.b.Width, Me.b.Height)
 
         g.DrawRectangle(Pens.DarkSlateGray, VirtualWindow)
+        g2.DrawRectangle(Pens.DarkSlateGray, VirtualWindow)
+        Dim average As Integer
+        Dim YDevice2 As Integer
+        Dim xDevice As Integer
+        Dim dictaverage As New Dictionary(Of Integer, Integer)
 
-        For i As Integer = 1 To NumerOfTrajectories
+        For i As Integer = 0 To NumerOfTrajectories
 
             Dim Punti As New List(Of Point)
             Dim Punti2 As New List(Of Point)
@@ -37,6 +51,8 @@
             Dim success As Double = 0
             Dim unsucces As Integer = 0
             Dim tentatives As Integer = 0
+            Dim YDevice As Integer
+
             For X As Integer = 1 To TrialsCount
                 Dim Uniform As Double = r.NextDouble
                 If Uniform < SuccessProbability Then
@@ -47,26 +63,47 @@
                     unsucces += 1
                     tentatives += 1
                 End If
-                Dim xDevice As Integer = FromXRealToXVirtual(X, minX, maxX, VirtualWindow.Left, VirtualWindow.Width)
+                xDevice = FromXRealToXVirtual(X, minX, maxX, VirtualWindow.Left, VirtualWindow.Width)
 
-                Dim YDevice As Integer = FromYRealToYVirtual(success, minY, maxY, VirtualWindow.Top, VirtualWindow.Height)
+                YDevice = FromYRealToYVirtual(success, minY, maxY, VirtualWindow.Top, VirtualWindow.Height)
                 Punti.Add(New Point(xDevice, YDevice))
 
+                If dictaverage.ContainsKey(YDevice2) Then
+                    dictaverage(YDevice2) += 1
+                Else
+                    dictaverage.Add(YDevice2, 1)
+                End If
 
-                Dim average As Integer = success * TrialsCount / (X + 1)
-                Dim YDevice2 As Integer = FromYRealToYVirtual(average, minY, maxY, VirtualWindow.Top, VirtualWindow.Height)
+
+                average = success * TrialsCount / (X + 1)
+                YDevice2 = FromYRealToYVirtual(average, minY, maxY, VirtualWindow.Top, VirtualWindow.Height)
                 Punti2.Add(New Point(xDevice, YDevice2))
 
                 Dim normalized As Double = success * (Math.Sqrt(TrialsCount)) / Math.Sqrt(X + 1)
                 Dim YDevice3 As Integer = FromYRealToYVirtual(normalized, minY, maxY * SuccessProbability, VirtualWindow.Top, VirtualWindow.Height)
                 Punti3.Add(New Point(xDevice, YDevice3))
+
+
             Next
-            g.DrawLines(PenTrajectory, Punti.ToArray)
+
+
+
+                g.DrawLines(PenTrajectory, Punti.ToArray)
             g.DrawLines(Penaverage, Punti2.ToArray)
             g.DrawLines(Penormalized, Punti3.ToArray)
         Next
 
+        For Each item In dictaverage
+            Dim rect As New Rectangle(0, item.Key, item.Value, 1)
+            Dim the_brush As New SolidBrush(Color.Red)
+            Dim the_pen As New Pen(Color.Red, 0)
+            g2.FillRectangle(the_brush, rect)
+            g2.DrawRectangle(the_pen, rect)
+
+        Next
+
         Me.PictureBox1.Image = b
+        Me.PictureBox2.Image = b2
 
     End Sub
 
@@ -106,7 +143,16 @@
 
     End Sub
 
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+
+    End Sub
+
 End Class
