@@ -68,12 +68,6 @@ Public Class Form1
                 YDevice = FromYRealToYVirtual(success, minY, maxY, VirtualWindow.Top, VirtualWindow.Height)
                 Punti.Add(New Point(xDevice, YDevice))
 
-                If dictaverage.ContainsKey(YDevice2) Then
-                    dictaverage(YDevice2) += 1
-                Else
-                    dictaverage.Add(YDevice2, 1)
-                End If
-
 
                 average = success * TrialsCount / (X + 1)
                 YDevice2 = FromYRealToYVirtual(average, minY, maxY, VirtualWindow.Top, VirtualWindow.Height)
@@ -86,9 +80,13 @@ Public Class Form1
 
             Next
 
+            If dictaverage.ContainsKey(YDevice2) Then
+                dictaverage(YDevice2) += 5
+            Else
+                dictaverage.Add(YDevice2, 5)
+            End If
 
-
-                g.DrawLines(PenTrajectory, Punti.ToArray)
+            g.DrawLines(PenTrajectory, Punti.ToArray)
             g.DrawLines(Penaverage, Punti2.ToArray)
             g.DrawLines(Penormalized, Punti3.ToArray)
         Next
