@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic.ApplicationServices;
 using Microsoft.VisualBasic.FileIO; 
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,10 @@ namespace Homework_3
         private void button1_Click(object sender, EventArgs e)
         {
             Dictionary<int, int> univariateData = new Dictionary<int, int>();
-            int index = 4;
+            int index = 2;
             this.richTextBox1.AppendText("Lets calculate the univariate distribution of the packets sent: \n");
             this.richTextBox1.ScrollToCaret();
-            using (TextFieldParser parser = new TextFieldParser("C:/Users/luca1/Desktop/wiresharkdtasetTCP.csv"))
+            using (TextFieldParser parser = new TextFieldParser("C:/Users/luca1/Desktop/weight-height.csv"))
             {
                 parser.TextFieldType = FieldType.Delimited;
                 parser.SetDelimiters(",");
@@ -32,7 +33,7 @@ namespace Homework_3
                     }
                     else
                     {
-                       univariateData.Add(key, 1);
+                        univariateData.Add(key, 1);
                     }
                 }
             }
@@ -47,10 +48,10 @@ namespace Homework_3
         private void button2_Click(object sender, EventArgs e)
         {
             Dictionary<int, int> univariateData = new Dictionary<int, int>();
-            int index = 5;
+            int index = 1;
             this.richTextBox1.AppendText("Lets calculate the univariate distribution of the bytes sent A: \n");
             this.richTextBox1.ScrollToCaret();
-            using (TextFieldParser parser = new TextFieldParser("C:/Users/luca1/Desktop/wiresharkdtasetTCP.csv"))
+            using (TextFieldParser parser = new TextFieldParser("C:/Users/luca1/Desktop/weight-height.csv"))
             {
                 parser.TextFieldType = FieldType.Delimited;
                 parser.SetDelimiters(",");
