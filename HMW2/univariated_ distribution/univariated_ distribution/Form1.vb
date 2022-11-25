@@ -12,7 +12,7 @@ Public Class Form1
         Me.RichTextBox1.AppendText("Calculating the univariate distribution of the students' age: " & vbLf)
         Me.RichTextBox1.ScrollToCaret()
 
-        Using parser As TextFieldParser = New TextFieldParser("C:\Users\luca1\Desktop\datasetwhireshark.csv")
+        Using parser As TextFieldParser = New TextFieldParser("./../../datasetwhireshark.csv")
             parser.TextFieldType = FieldType.Delimited
             parser.SetDelimiters(",")
             Dim header As String() = parser.ReadFields()

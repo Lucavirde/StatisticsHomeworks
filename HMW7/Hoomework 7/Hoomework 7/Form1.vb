@@ -103,7 +103,7 @@ Public Class Form1
 
             Dim rect As New Rectangle(index, 0, rectwidth, item.Value / scalah)
             Dim the_brush As New SolidBrush(Color.Red)
-            Dim the_pen As New Pen(Color.Red, 0)
+            Dim the_pen As New Pen(Color.Black, 0)
             g2.FillRectangle(the_brush, rect)
             g2.DrawRectangle(the_pen, rect)
             index = index + rectwidth
