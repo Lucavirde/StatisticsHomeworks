@@ -227,7 +227,7 @@ namespace homework6
             this.g = Graphics.FromImage(b);
             this.g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.g.Clear(Color.White);
-            this.richTextBox1.Clear();
+            this.richTextBox2.Clear();
 
 
             Rectangle VirtualWindow = new Rectangle(0, 0, this.b.Width - 1, this.b.Height - 1);
