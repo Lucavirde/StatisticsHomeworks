@@ -65,6 +65,7 @@
         Next
         g2.TranslateTransform(0, b2.Height)
         g2.ScaleTransform(1, -1)
+
         For Each item In dictaverage
             Dim i As Integer = 0
             Dim rect As New Rectangle(item.Key, 0, 1, item.Value)
