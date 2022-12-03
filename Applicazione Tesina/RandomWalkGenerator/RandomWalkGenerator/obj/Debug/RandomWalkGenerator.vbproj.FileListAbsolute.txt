@@ -1,0 +1,13 @@
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\bin\Debug\RandomWalkGenerator.exe.config
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\bin\Debug\RandomWalkGenerator.exe
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\bin\Debug\RandomWalkGenerator.pdb
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\bin\Debug\RandomWalkGenerator.xml
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\obj\Debug\RandomWalkGenerator.vbproj.AssemblyReference.cache
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\obj\Debug\RandomWalkGenerator.vbproj.SuggestedBindingRedirects.cache
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\obj\Debug\RandomWalkGenerator.Form1.resources
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\obj\Debug\RandomWalkGenerator.Resources.resources
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\obj\Debug\RandomWalkGenerator.vbproj.GenerateResource.cache
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\obj\Debug\RandomWalkGenerator.vbproj.CoreCompileInputs.cache
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\obj\Debug\RandomWalkGenerator.exe
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\obj\Debug\RandomWalkGenerator.xml
+C:\Users\luca1\source\repos\RandomWalkGenerator\RandomWalkGenerator\obj\Debug\RandomWalkGenerator.pdb

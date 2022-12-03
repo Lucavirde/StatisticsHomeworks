@@ -16,17 +16,17 @@ namespace Homework_3
         private void button1_Click(object sender, EventArgs e)
         {
             Dictionary<int, int> univariateData = new Dictionary<int, int>();
-            int index = 2;
-            this.richTextBox1.AppendText("Lets calculate the univariate distribution of the packets sent: \n");
+            int index = 3;
+            this.richTextBox1.AppendText("Calculating the univariate distribution of the packets sent: \n");
             this.richTextBox1.ScrollToCaret();
-            using (TextFieldParser parser = new TextFieldParser("C:/Users/luca1/Desktop/weight-height.csv"))
+            using (TextFieldParser parser = new TextFieldParser("C:/Users/luca1/Documents/GitHub/StatisticsHomeworks/HMW3/wireshark_dataset.csv"))
             {
                 parser.TextFieldType = FieldType.Delimited;
                 parser.SetDelimiters(",");
                 while (!parser.EndOfData)
                 {
                     string[] fields = parser.ReadFields();
-                    int key = Int32.Parse(fields[index]);
+                    int key = int.Parse(fields[index]);
                     if (univariateData.ContainsKey(key))
                     {
                         univariateData[key]++;
@@ -49,9 +49,9 @@ namespace Homework_3
         {
             Dictionary<int, int> univariateData = new Dictionary<int, int>();
             int index = 1;
-            this.richTextBox1.AppendText("Lets calculate the univariate distribution of the bytes sent A: \n");
+            this.richTextBox1.AppendText("Calculating the univariate distribution of the bytes sent A: \n");
             this.richTextBox1.ScrollToCaret();
-            using (TextFieldParser parser = new TextFieldParser("C:/Users/luca1/Desktop/weight-height.csv"))
+            using (TextFieldParser parser = new TextFieldParser("C:/Users/luca1/Documents/GitHub/StatisticsHomeworks/HMW3/wireshark_dataset.csv"))
             {
                 parser.TextFieldType = FieldType.Delimited;
                 parser.SetDelimiters(",");
